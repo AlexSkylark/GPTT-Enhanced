@@ -1,4 +1,4 @@
-# Gradual Progression Organizer (GPTT-Organizer)
+# Gradual Progression Tech Tree Organizer (GPTT-Organizer)
 
 **GPTT-Organizer** is an addon mod for **[Gradual Progression Tech Tree (GPTT)](https://github.com/Author/GPTT)**, designed to improve the organization and visual layout of the tech tree in **Kerbal Space Program (KSP)**. This mod requires GPTT to function but adds its own unique features.
 
