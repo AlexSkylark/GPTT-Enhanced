@@ -21,11 +21,11 @@ namespace GPTT
 
         public void Start()
         {
-            Debug.Log("[GPTT-Enhanced] Initialized.");
+            Debug.Log("[GPTT-Organizer] Initialized.");
 
             if (assetBundle == null)
             {
-                string bundlePath = Path.Combine(KSPUtil.ApplicationRootPath, "GameData/GPTT-Enhanced/Assets/prefabs.dat");
+                string bundlePath = Path.Combine(KSPUtil.ApplicationRootPath, "GameData/GPTT-Organizer/Assets/prefabs.dat");
                 assetBundle = AssetBundle.LoadFromFile(bundlePath);
             }            
 
@@ -70,7 +70,7 @@ namespace GPTT
 
         private void ProcessLostAndFoundNode()
         {
-            Debug.Log("[GPTT-Enhanced] Processing gptt_lostandfound node...");
+            Debug.Log("[GPTT-Organizer] Processing gptt_lostandfound node...");
 
             // Locate the parts list in the UI hierarchy
             generalPartsList = GameObject.Find("_UIMaster/MainCanvas/ResearchAndDevelopment/ContentSpace/Panel TechTree/" +
@@ -85,17 +85,17 @@ namespace GPTT
             {
                 if (group.Key.Contains("<UNKNOWN>"))
                 {
-                    Debug.Log($"[GPTT-Enhanced] Parts / upgrades without mod: {group.Value.Count}");
+                    Debug.Log($"[GPTT-Organizer] Parts / upgrades without mod: {group.Value.Count}");
                     foreach (var part in group.Value)
                     {
-                        Debug.Log($"[GPTT-Enhanced] Adding Unknown Part / Upgrade to Lost and Found node: {part.title}");
+                        Debug.Log($"[GPTT-Organizer] Adding Unknown Part / Upgrade to Lost and Found node: {part.title}");
                     }
                 } else
                 {
-                    Debug.Log($"[GPTT-Enhanced] Unsupported Mod: {group.Key}, Parts Count: {group.Value.Count}");
+                    Debug.Log($"[GPTT-Organizer] Unsupported Mod: {group.Key}, Parts Count: {group.Value.Count}");
                     foreach (var part in group.Value)
                     {
-                        Debug.Log($"[GPTT-Enhanced] Adding Part from mod \"{group.Key}\" to Lost and Found node: {part.title}");
+                        Debug.Log($"[GPTT-Organizer] Adding Part from mod \"{group.Key}\" to Lost and Found node: {part.title}");
                     }
                 }
             }
@@ -145,7 +145,7 @@ namespace GPTT
         private IEnumerator CustomizeTechTreeUI(Dictionary<string, List<AvailablePart>> groupedParts)
         {
             // Log that UI customization is starting
-            Debug.Log("[GPTT-Enhanced] Customizing the tech tree UI...");
+            Debug.Log("[GPTT-Organizer] Customizing the tech tree UI...");
            
             // Initialize sibling index (position in the list) and group index (used for spacing headers)
             int siblingIndex = 0;
@@ -154,7 +154,7 @@ namespace GPTT
             // Iterate through each mod group in the grouped parts dictionary
             foreach (var group in groupedParts)
             {                
-                Debug.Log($"[GPTT-Enhanced] Adding header for mod group: {group.Key}");
+                Debug.Log($"[GPTT-Organizer] Adding header for mod group: {group.Key}");
 
                 // Dynamically create a header GameObject for the mod group
                 GameObject header = Utilities.CreateHeaderPrefab(assetBundle, group.Key);

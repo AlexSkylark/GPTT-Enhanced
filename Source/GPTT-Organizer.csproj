@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GPTT</RootNamespace>
-    <AssemblyName>GPTT-Enhanced</AssemblyName>
+    <AssemblyName>GPTT-Organizer</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -69,10 +69,10 @@
   <PropertyGroup>
     <PostBuildEvent>echo Running debug post-build event...
 
-xcopy /Y "$(TargetDir)$(ProjectName).dll" "D:\KSPDebug\GameData\GPTT-Enhanced\"
+xcopy /Y "$(TargetDir)$(ProjectName).dll" "D:\KSPDebug\GameData\GPTT-Organizer\"
 
 if exist "$(TargetDir)$(ProjectName).pdb" (
-    xcopy /Y "$(TargetDir)$(ProjectName).pdb" "D:\KSPDebug\GameData\GPTT-Enhanced\"
+    xcopy /Y "$(TargetDir)$(ProjectName).pdb" "D:\KSPDebug\GameData\GPTT-Organizer\"
 ) else (
     echo Target file does not exist. Skipping copy.
 )

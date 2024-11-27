@@ -36,12 +36,12 @@ namespace GPTT
         {
             // Find all objects in the scene that have the specified component
             T[] objectsWithComponent = parent.GetComponentsInChildren<T>();
-            Debug.Log($"[GPTT-Enhanced] Found {objectsWithComponent.Length} GameObjects with component: {typeof(T).Name}.");
+            Debug.Log($"[GPTT-Organizer] Found {objectsWithComponent.Length} GameObjects with component: {typeof(T).Name}.");
 
             // Iterate through each object and destroy its GameObject
             foreach (T obj in objectsWithComponent)
             {
-                Debug.Log($"[GPTT-Enhanced] Destroying GameObject: {obj.gameObject.name} with component: {typeof(T).Name}");
+                Debug.Log($"[GPTT-Organizer] Destroying GameObject: {obj.gameObject.name} with component: {typeof(T).Name}");
                 GameObject.Destroy(obj.gameObject);
             }
         }

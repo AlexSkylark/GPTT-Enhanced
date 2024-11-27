@@ -1,6 +1,6 @@
-# Gradual Progression Tech Tree Enhanced (GPTT-Enhanced)
+# Gradual Progression Organizer (GPTT-Organizer)
 
-**GPTT-Enhanced** is an addon mod for **[Gradual Progression Tech Tree (GPTT)](https://github.com/Author/GPTT)**, designed to improve the organization and visual layout of the tech tree in **Kerbal Space Program (KSP)**. This mod requires GPTT to function but adds its own unique features.
+**GPTT-Organizer** is an addon mod for **[Gradual Progression Tech Tree (GPTT)](https://github.com/Author/GPTT)**, designed to improve the organization and visual layout of the tech tree in **Kerbal Space Program (KSP)**. This mod requires GPTT to function but adds its own unique features.
 
 ---
 
@@ -25,10 +25,9 @@
 - **[Module Manager](https://github.com/sarbian/ModuleManager)** (included in most mod packs).
 
 ### Steps
-1. Download the latest release of GPTT-Enhanced from the [Releases Page](https://github.com/AlexSkylark/GPTT-Enhanced/releases).
+1. Download the latest release of GPTT-Organizer from the [Releases Page](https://github.com/AlexSkylark/GPTT-Organizer/releases).
 2. Extract the contents of the archive.
-3. Place the `GameData/GPTT-Enhanced` folder into your KSP `GameData` directory.
-4. Ensure GPTT is installed and functional.
+3. Place the `GameData/GPTT-Organizer` folder into your KSP `GameData` directory.
 
 ## Configuration Options
 
@@ -36,7 +35,7 @@ You can enable or disable tech tree layout adjustments via a user settings file:
 
 1. Locate the file:
    ```
-   GameData/GPTT-Enhanced/UserSettings.cfg
+   GameData/GPTT-Organizer/UserSettings.cfg
    ```
 
 2. Edit the file to configure the layout adjustment:
@@ -68,4 +67,4 @@ This mod is licensed under the **Creative Commons Attribution-NonCommercial 4.0 
 ## Support
 
 For issues, questions, or feedback, please visit the mod's GitHub repository:
-[GitHub Repository](https://github.com/AlexSkylark/GPTT-Enhanced)
+[GitHub Repository](https://github.com/AlexSkylark/GPTT-Organizer)

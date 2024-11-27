@@ -14,13 +14,13 @@ namespace GPTT
 
         private bool ReadUserSetting()
         {
-            string path = Path.Combine(KSPUtil.ApplicationRootPath, "GameData/GPTT-Enhanced/UserSettings.cfg");
+            string path = Path.Combine(KSPUtil.ApplicationRootPath, "GameData/GPTT-Organizer/UserSettings.cfg");
             if (File.Exists(path))
             {
                 ConfigNode settingsNode = ConfigNode.Load(path);
-                if (settingsNode != null && settingsNode.HasNode("GPTTEnhancedSetting"))
+                if (settingsNode != null && settingsNode.HasNode("GPTTOrganizerSetting"))
                 {
-                    return bool.TryParse(settingsNode.GetNode("GPTTEnhancedSetting").GetValue(""), out bool value) && value;
+                    return bool.TryParse(settingsNode.GetNode("GPTTOrganizerSetting").GetValue(""), out bool value) && value;
                 }
             }
             return false; // Default to false
@@ -30,18 +30,18 @@ namespace GPTT
         {
             if (enabled)
             {
-                if (File.Exists(Path.Combine(KSPUtil.ApplicationRootPath, "GameData/GPTT-Enhanced/NodeAdjustments.cfg")))
+                if (File.Exists(Path.Combine(KSPUtil.ApplicationRootPath, "GameData/GPTT-Organizer/NodeAdjustments.cfg")))
                     File.Move(Path.Combine(
                             KSPUtil.ApplicationRootPath,
-                            "GameData/GPTT-Enhanced/NodeAdjustments.cfg.OFF"),
-                        Path.Combine(KSPUtil.ApplicationRootPath, "GameData/GPTT-Enhanced/NodeAdjustments.cfg"));
+                            "GameData/GPTT-Organizer/NodeAdjustments.cfg.OFF"),
+                        Path.Combine(KSPUtil.ApplicationRootPath, "GameData/GPTT-Organizer/NodeAdjustments.cfg"));
             } else
             {
-                if (File.Exists(Path.Combine(KSPUtil.ApplicationRootPath, "GameData/GPTT-Enhanced/NodeAdjustments.cfg")))
+                if (File.Exists(Path.Combine(KSPUtil.ApplicationRootPath, "GameData/GPTT-Organizer/NodeAdjustments.cfg")))
                     File.Move(Path.Combine(
                             KSPUtil.ApplicationRootPath,
-                            "GameData/GPTT-Enhanced/NodeAdjustments.cfg"),
-                        Path.Combine(KSPUtil.ApplicationRootPath, "GameData/GPTT-Enhanced/NodeAdjustments.cfg.OFF"));
+                            "GameData/GPTT-Organizer/NodeAdjustments.cfg"),
+                        Path.Combine(KSPUtil.ApplicationRootPath, "GameData/GPTT-Organizer/NodeAdjustments.cfg.OFF"));
             }
         }
     }
