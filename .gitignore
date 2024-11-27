@@ -1,0 +1,60 @@
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+/.vs/
+
+# Ignore temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+*.log
+
+# Ignore compiled binaries
+*.dll
+*.exe
+*.pdb
+
+# Ignore build artifacts
+/Source/bin/
+/Source/obj/
+*.zip
+
+# Ignore Visual Studio files
+# User-specific files
+*.user
+*.suo
+
+# Solution-specific files
+*.sln.docstates
+
+# Rider-specific files
+.idea/
+
+# Backup or generated files
+*.bak
+*.orig
+
+# Ignore Visual Studio Code files
+.vscode/
+
+# Ignore Unity-related files (relevant for mods using Unity)
+Library/
+Temp/
+*.unityproj
+*.pidb
+*.mdb
+
+# Ignore CKAN-related metadata
+*.ckan
+
+# Ignore GameData folder outside your mod directory
+GameData/*
+!GameData/HideEmptyFilters/
+
+# Ignore any test-related files or folders
+TestResults/
+
+# Ignore Project assets
+/AssetsMaterials/
