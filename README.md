@@ -21,7 +21,7 @@
 ## Installation
 
 ### Dependencies
-- **[Gradual Progression Tech Tree (GPTT)](https://github.com/Author/GPTT)**
+- **[Gradual Progression Tech Tree (GPTT)](https://github.com/hersfeldtn/GPTT)**
 - **[Module Manager](https://github.com/sarbian/ModuleManager)** (included in most mod packs).
 
 ### Steps

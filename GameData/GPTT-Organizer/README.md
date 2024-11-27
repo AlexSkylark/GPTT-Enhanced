@@ -14,7 +14,7 @@
 ## Installation
 
 1. **Requirements**:~
-   - Install the **[Gradual Progression Tech Tree (GPTT)](https://github.com/Author/GPTT)** mod .
+   - Install the **[Gradual Progression Tech Tree (GPTT)](https://github.com/hersfeldtn/GPTT)** mod .
    - Ensure **[Module Manager](https://github.com/sarbian/ModuleManager)** is installed.
 
 2. **Install GPTT-Organizer**:
