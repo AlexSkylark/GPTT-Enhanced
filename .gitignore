@@ -51,7 +51,7 @@ Temp/
 
 # Ignore GameData folder outside your mod directory
 GameData/*
-!GameData/HideEmptyFilters/
+!GameData/GPTT-Organizer/
 
 # Ignore any test-related files or folders
 TestResults/
